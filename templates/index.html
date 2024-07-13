@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" >
+
+        <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+        {% block favicon %}
+        <link rel="icon" href="{{ config.base_url }}favicon.png">
+        {% endblock favicon %}
+
+        {% block fonts %}
+
+        {% endblock fonts %}
+
+        {% block style %}
+        <link rel="stylesheet" href="{{ config.base_url}}main.css">
+        {% endblock style %}
+
+        {% include "_variables.html" %}
+    </head>
+
+    <body>
+        {% block header %}
+
+        {% endblock header %}
+
+        <main>
+            <div class="content">
+                {% block content %}
+                    {{ section.content | safe }}
+                {% endblock content %}
+            </div>
+        </main>
+
+    </body>
+
+    <footer>
+
+    </footer>
+</html>

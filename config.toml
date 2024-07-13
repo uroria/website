@@ -1,0 +1,12 @@
+base_url = "/"
+
+title = "Uroria Development-Studio"
+
+compile_sass = true
+minify_html = true
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [{ theme = "one-dark", filename = "syntax-theme.css" }]
+
